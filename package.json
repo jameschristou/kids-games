@@ -4,7 +4,9 @@
   "description": "Simple site which creates some basic games for toddlers to test knowledge of colour",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "start": "webpack-dev-server --config webpack/webpack.config.js --env.env=dev",
+    "build": "webpack --config webpack/webpack.config.js --env.env=prod",
+    "build:analyze": "npm run build -- --env.addon=bundleanalyze --env.addon=bundlevisualizer",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,13 +24,22 @@
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "dotenv-webpack": "^1.7.0",
+    "eslint-loader": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
     "react-hot-loader": "^4.12.15",
     "webpack": "^4.41.0",
+    "webpack-bundle-analyzer": "^3.5.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.2"
+    "webpack-dev-server": "^3.8.2",
+    "webpack-merge": "^4.2.2",
+    "webpack-visualizer-plugin": "^0.1.11"
   },
   "dependencies": {
+    "eslint": "^6.5.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   }

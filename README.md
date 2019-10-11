@@ -9,3 +9,6 @@ To compile front end assets while developing use `npm run dev`.
 
 Production
 `npm run build`
+
+Analysis
+`npm run build:analyze` runs static analysis to examine bundle sizing. You can see output reports in dist/stats.html and dist/report.html 
