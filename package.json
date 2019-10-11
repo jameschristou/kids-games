@@ -1,52 +1,35 @@
 {
-  "name": "posts-processor-plugin",
+  "name": "kids-games",
   "version": "1.0.0",
-  "description": "Wordpress plugin which allows you to run custom code on a set/all of your wordpress posts. For example if you need to update each post in some custom way",
-  "main": "src/index.js",
+  "description": "Simple site which creates some basic games for toddlers to test knowledge of colour",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --watch --config webpack/webpack.dev.config.js",
-    "build-prod": "webpack --mode=production --config webpack/webpack.prod.config.js",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --config webpack/webpack.dev.config.js"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jameschristou/wordpress-posts-processor-plugin.git"
+    "url": "git+https://github.com/jameschristou/kids-games.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jameschristou/wordpress-posts-processor-plugin/issues"
+    "url": "https://github.com/jameschristou/kids-games/issues"
   },
-  "homepage": "https://github.com/jameschristou/wordpress-posts-processor-plugin#readme",
+  "homepage": "https://github.com/jameschristou/kids-games#readme",
   "devDependencies": {
-    "@babel/cli": "^7.4.3",
-    "@babel/core": "^7.4.3",
-    "@babel/plugin-transform-runtime": "^7.6.0",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/runtime": "^7.6.0",
-    "babel-loader": "^8.0.5",
-    "cross-env": "^5.2.1",
-    "css-loader": "^2.1.1",
-    "eslint-loader": "^2.1.2",
-    "eslint-plugin-react-hooks": "^1.6.1",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.6.0",
-    "node-sass": "^4.11.0",
-    "optimize-css-assets-webpack-plugin": "^5.0.1",
-    "react-hot-loader": "^4.12.13",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.1.2",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.1",
-    "webpack-dev-server": "^3.8.0"
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "react-hot-loader": "^4.12.15",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   }
 }
