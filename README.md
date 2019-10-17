@@ -5,7 +5,7 @@ Simple site which creates some basic games for toddlers to test knowledge of col
 Run `npm install` to install all packages and depenedencies.
 
 Dev
-To compile front end assets while developing use `npm run dev`.
+To compile front end assets while developing use `npm run start`.
 
 Production
 `npm run build`
