@@ -10,7 +10,7 @@ const AppComponent = (props) => {
   const startGameHandler = (e) => {
     e.preventDefault();
 
-    setHasStarted(true);
+    nextTestHandler(e);
   };
 
   const nextTestHandler = (e) => {
@@ -28,6 +28,10 @@ const AppComponent = (props) => {
       setTestData(result.data);
     };
 
+    if(!hasStarted){
+      setHasStarted(true);
+    }
+    
     fetchData();
   };
 
