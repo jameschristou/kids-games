@@ -26,11 +26,11 @@ const AppComponent = (props) => {
       );
       
       setTestData(result.data);
-    };
 
-    if(!hasStarted){
-      setHasStarted(true);
-    }
+      if(!hasStarted){
+        setHasStarted(true);
+      }
+    };
     
     fetchData();
   };

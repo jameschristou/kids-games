@@ -10,6 +10,10 @@ body,
     padding: 0;
 }
 
+body{
+    font-family: "Open Sans";
+}
+
 .kg{
     &__start-container,
     &__colour-test-container{
@@ -33,6 +37,7 @@ body,
     &__colour-test-container{
         .colour-test__question{
             font-size: 150px;
+            font-weight:600;
         }
 
         .next__button{
