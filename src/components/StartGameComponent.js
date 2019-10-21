@@ -2,12 +2,12 @@ import React from 'react';
 
 const StartGameComponent = ({startGameHandler}) => {
   return (
-    <div className='kg__start-container'>
-      <div>
-        <h2 className='start__heading'>Let's have some fun learning colours and stuff!</h2>
-        <div>
-          <input className="button start__button" type="submit" value="Start" onClick={event => startGameHandler(event)}/>
-        </div>
+    <div className='container-centered'>
+      <div className="start-container">
+        <p className='start__text'>Let's have some fun learning colours and stuff!</p>
+        <button className="button start__button" type="submit" onClick={event => startGameHandler(event)}>
+          <span>Start</span>
+        </button>
       </div>
     </div>
   );

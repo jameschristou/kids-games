@@ -29,10 +29,12 @@ const ColourTestComponent = ({nextTestHandler, testData}) => {
   };
 
   return (
-    <div style={divStyle} className="kg__colour-test-container">
-      <div>
-        <p className="colour-test__question">{testData.questionText}</p>
-        <input className="button next__button" type="submit" value="Next" onClick={event => nextTestHandler(event)}/>
+    <div style={divStyle} className="container-bottom">
+      <div className="colour-test-container">
+        <p className="colour-test__text">{testData.questionText}</p>
+        <button className="button next__button" type="submit" onClick={event => nextTestHandler(event)}>
+          <span>Next</span>
+        </button>
       </div>
     </div>
   );

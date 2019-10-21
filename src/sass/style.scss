@@ -1,9 +1,8 @@
 html,
 body,
 .kg_container,
-.kg__start-container,
-.kg__colour-test-container
-{
+.container-centered,
+.container-bottom{
     width: 100%;
     height: 100%;
     margin: 0;
@@ -12,37 +11,59 @@ body,
 
 body{
     font-family: "Open Sans";
+    color: darkslategrey;
 }
 
-.kg{
-    &__start-container,
-    &__colour-test-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 200px 90px;
-    }
+.container-centered,
+.container-bottom{
+    display: flex;
+    justify-content: center;
+}
 
-    &__start-container{
-        .start__heading{
-            font-size: 100px;
-        }
-    
-        .start__button{
-            font-size: 100px;
-            padding: 20px 60px;
-        }
-    }
 
-    &__colour-test-container{
-        .colour-test__question{
-            font-size: 150px;
-            font-weight:600;
-        }
+.container-centered{
+    align-items: center;
+}
 
-        .next__button{
-            font-size: 100px;
-            padding: 20px 60px;
-        }
+.container-bottom{
+    align-items: flex-end;
+}
+
+.start-container,
+.colour-test-container{
+    background-color: white;
+    margin: 10px 50px;
+    border-radius: 20px;
+    padding: 50px;
+    border: darkslategrey;
+    border-width: 16px;
+    border-style: solid;
+}
+
+.start-container{
+    .start__text{
+        font-size: 110px;
+        font-weight: 600;
+        margin: 0 0 50px;
+        line-height: 1.2em;
     }
+}
+
+.colour-test-container{
+    margin-bottom: 50px;
+
+    .colour-test__text{
+        font-size: 130px;
+        font-weight: 600;
+        margin: 0 0 50px;
+        line-height: 1.2em;
+    }
+}
+
+.button{
+    border-radius: 4px;
+    background-color: darkslategrey;
+    color: white;
+    font-size: 80px;
+    padding: 40px 80px;
 }
