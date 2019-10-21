@@ -29,8 +29,7 @@ body{
     align-items: flex-end;
 }
 
-.start-container,
-.colour-test-container{
+.game-container{
     background-color: white;
     margin: 10px 50px;
     border-radius: 20px;
@@ -38,10 +37,8 @@ body{
     border: darkslategrey;
     border-width: 16px;
     border-style: solid;
-}
 
-.start-container{
-    .start__text{
+    &__text{
         font-size: 110px;
         font-weight: 600;
         margin: 0 0 50px;
@@ -51,13 +48,6 @@ body{
 
 .colour-test-container{
     margin-bottom: 50px;
-
-    .colour-test__text{
-        font-size: 130px;
-        font-weight: 600;
-        margin: 0 0 50px;
-        line-height: 1.2em;
-    }
 }
 
 .button{
